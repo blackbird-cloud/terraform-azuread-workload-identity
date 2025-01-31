@@ -60,11 +60,11 @@ module "azuread_workload_identity" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_ad_application_fic_prefix"></a> [ad\_application\_fic\_prefix](#input\_ad\_application\_fic\_prefix) | The prefix for the Azure AD application federated identity credential name | `string` | `"fed-identity"` | no |
 | <a name="input_ad_application_prefix"></a> [ad\_application\_prefix](#input\_ad\_application\_prefix) | The prefix for the Azure AD application name | `string` | `"sp"` | no |
-| <a name="input_audiences"></a> [audiences](#input\_audiences) | The audiences for the federated identity credential | `list(string)` | <pre>[<br>  "api://AzureADTokenExchange"<br>]</pre> | no |
+| <a name="input_audiences"></a> [audiences](#input\_audiences) | The audiences for the federated identity credential | `list(string)` | <pre>[<br/>  "api://AzureADTokenExchange"<br/>]</pre> | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the workload identity | `string` | n/a | yes |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | The namespace of the workload identity | `string` | n/a | yes |
 | <a name="input_oidc_issuer_url"></a> [oidc\_issuer\_url](#input\_oidc\_issuer\_url) | The OIDC issuer URL | `string` | n/a | yes |
-| <a name="input_role_assignments"></a> [role\_assignments](#input\_role\_assignments) | Role assignments | <pre>list(object({<br>    name                 = string,<br>    scope                = string,<br>    role_definition_id   = optional(string),<br>    role_definition_name = optional(string),<br>    principal_type       = optional(string)<br>  }))</pre> | `[]` | no |
+| <a name="input_role_assignments"></a> [role\_assignments](#input\_role\_assignments) | Role assignments | <pre>list(object({<br/>    name                 = string,<br/>    scope                = string,<br/>    role_definition_id   = optional(string),<br/>    role_definition_name = optional(string),<br/>    principal_type       = optional(string)<br/>  }))</pre> | `[]` | no |
 | <a name="input_service_account_name"></a> [service\_account\_name](#input\_service\_account\_name) | The name of the service account | `string` | n/a | yes |
 
 ## Outputs
@@ -82,5 +82,5 @@ Checkout our other :point\_right: [terraform modules](https://registry.terraform
 
 ## Copyright
 
-Copyright © 2017-2024 [Blackbird Cloud](https://blackbird.cloud)
+Copyright © 2017-2025 [Blackbird Cloud](https://blackbird.cloud)
 <!-- END_TF_DOCS -->
